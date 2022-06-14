@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="bg-gray-700">
+        <div class=" w-11/12 lg:w-[98%] xl:w-5/6 mx-auto py-3 flex items-center justify-between">
+          <a href="#" class="flex">
+            <svg class="h-10 mr-3" viewBox="0 0 52 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.87695 53H28.7791C41.5357 53 51.877 42.7025 51.877 30H24.9748C12.2182 30 1.87695 40.2975 1.87695 53Z"
+                fill="#76A9FA"></path>
+              <path
+                d="M0.000409561 32.1646L0.000409561 66.4111C12.8618 66.4111 23.2881 55.9849 23.2881 43.1235L23.2881 8.87689C10.9966 8.98066 1.39567 19.5573 0.000409561 32.1646Z"
+                fill="#A4CAFE"></path>
+              <path d="M50.877 5H23.9748C11.2182 5 0.876953 15.2975 0.876953 28H27.7791C40.5357 28 50.877 17.7025 50.877 5Z"
+                    fill="#1C64F2"></path>
+            </svg>
+            <span class="self-center text-lg font-semibold whitespace-nowrap text-white">COMPANY</span>
+          </a>
+            <div class="hidden lg:flex">
+                <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                    <i class="bi bi-house-door-fill  text-3xl text-gray-200"></i>
+                </div>
+                <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                    <i class="bi bi-sliders text-3xl text-gray-200"></i>
+                </div>
+                <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                    <i class="bi bi-person-circle text-3xl text-gray-200"></i>
+                </div>
+                <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                    <i class="bi bi-gear-fill text-3xl text-gray-200"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-gray-900 min-h-screen text-gray-200">
+        <div class="bg-gray-800 w-11/12 lg:w-[98%] xl:w-5/6 mx-auto">
+            <h1 class="text-white pl-5 py-5">Overview</h1>
+            <hr class="border-red-500" />
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+                <div class="flex flex-col md:flex-row">
+                    <!-- CIRCULAR PROGRESS GROUP -->
+                    <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="px-2">
+                            <h2 class="py-5">T1 paint temp</h2>
+                            <div class="radial-progress bg-gray-700 text-lime-700 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">200°c</div>
+                        </div>
+                        <div class="px-2">
+                            <h2 class="py-5">T1 oil temp</h2>
+                            <div class="radial-progress bg-gray-700 text-lime-500 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">248°c</div>
+                        </div>
+                    </div>
+
+                    <!-- ICON GROUP -->
+                    <div class="md:w-1/2  mx-auto py-7 md:py-0">
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-thermometer-high text-yellow-500"></i>
+                            <h2 class="py-5 px-3">T1 Burner</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <h2 class="py-5 px-3">T1 Mixer</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-alarm-fill"></i>
+                            <h2 class="py-5 px-3">T1 Alarm</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+
+                    <!-- CIRCULAR PROGRESS GROUP -->
+                    <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="px-2">
+                            <h2 class="py-5">T2 paint temp</h2>
+                            <div class="radial-progress bg-gray-700 text-yellow-700 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">125°c</div>
+                        </div>
+                        <div class="px-2">
+                            <h2 class="py-5">T2 oil temp</h2>
+                            <div class="radial-progress bg-gray-700 text-orange-700 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">88°c</div>
+                        </div>
+                    </div>
+
+                    <!-- ICON GROUP -->
+                    <div class=" md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-thermometer-high text-yellow-500"></i>
+                            <h2 class="py-5 px-3">T1 Burner</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <h2 class="py-5 px-3">T2 Mixer</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-alarm-fill"></i>
+                            <h2 class="py-5 px-3">T2 Alarm</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+
+                    <!-- CIRCULAR PROGRESS GROUP -->
+                    <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="px-2">
+                            <h2 class="py-5">T3 paint temp</h2>
+                            <div class="radial-progress bg-gray-700 text-cyan-700 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">163°c</div>
+                        </div>
+                        <div class="px-2">
+                            <h2 class="py-5">T3 oil temp</h2>
+                            <div class="radial-progress bg-gray-700 text-cyan-500 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">188°c</div>
+                        </div>
+                    </div>
+
+                    <!-- ICON GROUP -->
+                    <div class=" md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-thermometer-high text-yellow-500"></i>
+                            <h2 class="py-5 px-3">T3 Burner</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <h2 class="py-5 px-3">T3 Mixer</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-alarm-fill"></i>
+                            <h2 class="py-5 px-3">T3 Alarm</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+
+                    <!-- CIRCULAR PROGRESS GROUP -->
+                    <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="px-2">
+                            <h2 class="py-5">T4 paint temp</h2>
+                            <div class="radial-progress bg-gray-700 text-pink-600 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">200°c</div>
+                        </div>
+                        <div class="px-2">
+                            <h2 class="py-5">T4 oil temp</h2>
+                            <div class="radial-progress bg-gray-700 text-rose-500 border-4 border-gray-700"
+                                style="--value:70; --size:6rem">200°c</div>
+                        </div>
+                    </div>
+
+                    <!-- ICON GROUP -->
+                    <div class=" md:w-1/2 mx-auto py-7 md:py-0">
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-thermometer-high text-yellow-500"></i>
+                            <h2 class="py-5 px-3">T4 Burner</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <h2 class="py-5 px-3">T4 Mixer</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5  text-lime-400">ON</button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="bi bi-alarm-fill"></i>
+                            <h2 class="py-5 px-3">T4 Alarm</h2>
+                            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-500 my-5" />
+
+            <div class="flex flex-col md:flex-row justify-between md:text-sm lg:text-regular pb-20">
+                <div class="px-3 lg:px-7 py-7 md:py-0">
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-stopwatch-fill text-yellow-500"></i>
+                        <h2 class="py-5 px-3">Oil pump yellow</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-stopwatch-fill"></i>
+                        <h2 class="py-5 px-3">Oil pump white</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-lightbulb"></i>
+                        <h2 class="py-5 px-3">Platform light(s)</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                    </div>
+                </div>
+                <div class="px-3 lg:px-7 py-7 md:py-0">
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-clipboard2"></i>
+                        <h2 class="py-5 px-3 pr-10 lg:pr-14">Diesel level</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5">100%</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-bezier"></i>
+                        <h2 class="py-5 px-3">Applicator temp L</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5">200°c</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-bezier"></i>
+                        <h2 class="py-5 px-3">Applicator temp R</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5">250°c</button>
+                    </div>
+                </div>
+                <div class="px-3 lg:px-7 py-7 md:py-0">
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-alarm-fill"></i>
+                        <h2 class="py-5 px-3">Hydro-temp alarm</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-alarm-fill"></i>
+                        <h2 class="py-5 px-3">Hydro-level alarm </h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="bi bi-alarm-fill"></i>
+                        <h2 class="py-5 px-3">Diesel level alarm</h2>
+                        <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-700 fixed z-50 bottom-0 lg:hidden w-full">
+        <div class="flex justify-around">
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                <i class="bi bi-house-door-fill  text-3xl text-gray-200"></i>
+            </div>
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                <i class="bi bi-sliders text-3xl text-gray-200"></i>
+            </div>
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                <i class="bi bi-person-circle text-3xl text-gray-200"></i>
+            </div>
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+                <i class="bi bi-gear-fill text-3xl text-gray-200"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="h-[120px] bg-gray-700 text-gray-200 text-center hidden lg:block">
+        <h4 class="pt-10">© copyright 2022 ASL </h4>
+    </footer>
+</body>
+</html>
+
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="utf-8">-->
+<!--  <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--  <title>TRMM</title>-->
+<!--  <link href="tailwind.css" rel="stylesheet">-->
+<!--  <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>-->
+<!--  <base href="/">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  <link rel="icon" type="image/x-icon" href="favicon.ico">-->
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">-->
+<!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="flex flex-col h-screen" style="background-color: #3C3E40">-->
+<!--  &lt;!&ndash;  this header section&ndash;&gt;-->
+<!--  <nav class="border-gray-200 border-gray-200 px-2 sm:px-4 py-2.5">-->
+<!--    <div class="container mx-auto flex flex-wrap items-center justify-between">-->
+<!--      <a href="#" class="flex">-->
+<!--        <svg class="h-10 mr-3" viewBox="0 0 52 72" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--          <path-->
+<!--            d="M1.87695 53H28.7791C41.5357 53 51.877 42.7025 51.877 30H24.9748C12.2182 30 1.87695 40.2975 1.87695 53Z"-->
+<!--            fill="#76A9FA"></path>-->
+<!--          <path-->
+<!--            d="M0.000409561 32.1646L0.000409561 66.4111C12.8618 66.4111 23.2881 55.9849 23.2881 43.1235L23.2881 8.87689C10.9966 8.98066 1.39567 19.5573 0.000409561 32.1646Z"-->
+<!--            fill="#A4CAFE"></path>-->
+<!--          <path d="M50.877 5H23.9748C11.2182 5 0.876953 15.2975 0.876953 28H27.7791C40.5357 28 50.877 17.7025 50.877 5Z"-->
+<!--                fill="#1C64F2"></path>-->
+<!--        </svg>-->
+<!--        <span class="self-center text-lg font-semibold whitespace-nowrap text-white">COMPANY</span>-->
+<!--      </a>-->
+
+<!--      <div class="md:flex justify-between text-white w-full md:w-auto md:order-1" id="mobile-menu-4">-->
+<!--        <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">-->
+<!--          <li>-->
+<!--            Home-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            Config-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            Login-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            Setting-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+
+<!--  &lt;!&ndash; Main body section&ndash;&gt;-->
+<!--  <div class="flex-grow">-->
+<!--    <app-root></app-root>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash;  Footer section&ndash;&gt;-->
+<!--  <div>-->
+<!--    <footer class="text-center text-white lg:text-left">-->
+<!--      <div class="text-center p-4 text-sm">-->
+<!--        © 2021 Copyright-->
+<!--        <a class="" href="/login">Trysil Road Marketing Machines</a>-->
+<!--      </div>-->
+<!--    </footer>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+

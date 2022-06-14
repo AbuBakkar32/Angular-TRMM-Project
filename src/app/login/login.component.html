@@ -1,0 +1,55 @@
+<div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
+    <div>
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-white">Sign in to your account</h2>
+    </div>
+    <form class="mt-8 space-y-6">
+      <input type="hidden" name="remember" value="true">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div class="mb-4">
+          <label for="username" class="sr-only">Email address</label>
+          <input id="username" name="username" type="text" required
+                 class="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                 placeholder="Username">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="sr-only">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required
+                 class="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                 placeholder="Password">
+        </div>
+      </div>
+
+      <!-- Login Button Section-->
+      <div>
+        <button (click)="register()" type="submit"
+                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-400 hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-orange-400">
+          Login
+        </button>
+      </div>
+
+      <!-- Forgot your password?-->
+      <div class="flex justify-center text-center">
+        <div class="text-sm">
+          <a href="#" class="font-medium text-white"> Forgot your password? </a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<section class="fixed z-50 bottom-0 lg:hidden w-full" style="background-color: #3C3E40">
+  <div class="flex justify-around">
+    <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+      <i class="bi bi-house-door-fill  text-3xl text-gray-200"></i>
+    </div>
+    <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+      <i class="bi bi-sliders text-3xl text-gray-200"></i>
+    </div>
+    <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+      <i class="bi bi-person-circle text-3xl text-gray-200"></i>
+    </div>
+    <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+      <i class="bi bi-gear-fill text-3xl text-gray-200"></i>
+    </div>
+  </div>
+</section>
