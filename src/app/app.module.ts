@@ -9,13 +9,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ControlComponent } from './control/control.component';
+import { SettingComponent } from './setting/setting.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ControlComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
