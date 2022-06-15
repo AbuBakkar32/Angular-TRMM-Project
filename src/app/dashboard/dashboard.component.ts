@@ -17,9 +17,9 @@ export class DashboardComponent implements OnInit {
   }
 
   public Data = {
-    "TempAlarm": false,
+    "TempAlarm": true,
     "LevelAlarm": false,
-    "OilYellow": false,
+    "OilYellow": true,
     "OilWhite": false,
     "LightS": false,
     "DieselAlarm": false,
