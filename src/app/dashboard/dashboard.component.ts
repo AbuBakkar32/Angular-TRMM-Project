@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  StatusReport: any;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.StatusReport = this.Data;
+  }
+
+  public Data = {
+    "TempAlarm": false,
+    "LevelAlarm": false,
+    "OilYellow": false,
+    "OilWhite": false,
+    "LightS": false,
+    "DieselAlarm": false,
+    "FuelLevel": 100,
+    "LeftTemp": 200,
+    "RightTemp": 250,
+    Tanks: [
+      {"id": 1, "Burner": true, "Mixer": false, "Alarm": true, "PaintTemp": 80, "OilTemp": 99},
+      {"id": 2, "Burner": false, "Mixer": true, "Alarm": false, "PaintTemp": 50, "OilTemp": 35},
+      {"id": 3, "Burner": true, "Mixer": false, "Alarm": true, "PaintTemp": 65, "OilTemp": 75},
+      {"id": 4, "Burner": false, "Mixer": true, "Alarm": false, "PaintTemp": 90, "OilTemp": 60},
+    ]
   }
 
 }
