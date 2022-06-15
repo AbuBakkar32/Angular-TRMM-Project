@@ -10,18 +10,18 @@ export class ControlComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.USerSettings;
+    this.UserSettings;
   }
 
-  public USerSettings = {
+  public UserSettings = {
     "OilYellowSet": false,
-    "OilWhiteSet": false,
+    "OilWhiteSet": true,
     "LightSet": false,
     Tanks:[
-      {"id" : 1, "Burner" : true, "MixerSet" : false, "PaintSet" : 200, "OilSet" : 90},
-      {"id" : 2, "Burner" : false, "MixerSet" : true,  "PaintSet" : 115, "OilSet" : 220},
-      {"id" : 3, "Burner" : true, "MixerSet" : false, "PaintSet" : 135, "OilSet" : 100},
-      {"id" : 4, "Burner" : false, "MixerSet" : true,  "PaintSet" : 200, "OilSet" : 120},
+      {"id" : 1, "BurnerSet" : true, "MixerSet" : false, "PaintSet" : 200, "OilSet" : 90},
+      {"id" : 2, "BurnerSet" : false, "MixerSet" : true,  "PaintSet" : 115, "OilSet" : 220},
+      {"id" : 3, "BurnerSet" : true, "MixerSet" : false, "PaintSet" : 135, "OilSet" : 100},
+      {"id" : 4, "BurnerSet" : false, "MixerSet" : true,  "PaintSet" : 200, "OilSet" : 120},
     ]
   }
 

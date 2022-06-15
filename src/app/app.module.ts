@@ -11,6 +11,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ControlComponent } from './control/control.component';
 import { SettingComponent } from './setting/setting.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { SettingComponent } from './setting/setting.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

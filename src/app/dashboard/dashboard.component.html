@@ -10,14 +10,14 @@
         <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
           <div class="px-2">
             <h2 class="py-5">T{{tank.id}} paint temp</h2>
-            <div class="radial-progress bg-gray-500 text-lime-500 border-4 border-gray-700"
-                 style="--value:80; --size:6rem">{{tank.PaintTemp}}°c
+            <div class="radial-progress font-extrabold text-lime-500 border-4 border-gray-700"
+                 style="--value:80; --size:6rem; color: #297000">{{tank.PaintTemp}}°c
             </div>
           </div>
           <div class="px-2">
             <h2 class="py-5">T{{tank.id}} oil temp</h2>
-            <div class="radial-progress bg-gray-500 text-lime-500 border-4 border-gray-700"
-                 style="--value:40; --size:6rem">{{tank.OilTemp}}°c
+            <div class="radial-progress font-extrabold text-lime-500 border-4 border-gray-700"
+                 style="--value:40; --size:6rem; color: #843102">{{tank.OilTemp}}°c
             </div>
           </div>
         </div>
@@ -27,30 +27,30 @@
             <i class="bi bi-thermometer-high text-yellow-500"></i>
             <h2 class="py-5 px-3">T{{tank.id}} Burner</h2>
             <span *ngIf="tank.Burner == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 font-semibold text-sm bg-gray-600 mx-5 mr-7 text-lime-400">ON</button>
             </span>
             <span *ngIf="tank.Burner == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-2 py-1 bg-gray-600 font-semibold text-sm mx-5 text-red-500">OFF</button>
             </span>
           </div>
           <div class="flex justify-center items-center">
             <i class="bi bi-arrow-left-right"></i>
             <h2 class="py-5 px-3">T{{tank.id}} Mixer</h2>
             <span *ngIf="tank.Mixer == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold text-sm mx-5 text-lime-400">ON</button>
             </span>
             <span *ngIf="tank.Mixer == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-2 py-1 bg-gray-600 font-semibold text-sm mx-5 mr-2 text-red-500">OFF</button>
             </span>
           </div>
           <div class="flex justify-center items-center">
             <i class="bi bi-alarm-fill"></i>
             <h2 class="py-5 px-3">T{{tank.id}} Alarm</h2>
             <span *ngIf="tank.Alarm == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold text-sm mx-5 text-lime-400">ON</button>
             </span>
             <span *ngIf="tank.Alarm == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-2 py-1 bg-gray-600 font-semibold text-sm mx-5 mr-2 text-red-500">OFF</button>
             </span>
           </div>
         </div>
@@ -65,30 +65,30 @@
           <i class="bi bi-stopwatch-fill text-yellow-500"></i>
           <h2 class="py-5 px-3">Oil pump yellow</h2>
           <span *ngIf="StatusReport.OilYellow == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold text-sm mx-5 text-red-500">OFF</button>
           </span>
           <span *ngIf="StatusReport.OilYellow == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 mx-5 text-sm font-semibold text-lime-400">ON</button>
           </span>
         </div>
         <div class="flex justify-center items-center">
           <i class="bi bi-stopwatch-fill"></i>
           <h2 class="py-5 px-3">Oil pump white</h2>
           <span *ngIf="StatusReport.OilWhite == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-3 py-1 bg-gray-600 mx-5 text-sm font-semibold text-red-500">OFF</button>
           </span>
           <span *ngIf="StatusReport.OilWhite == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 mx-5 text-sm font-semibold text-lime-400">ON</button>
           </span>
         </div>
         <div class="flex justify-center items-center">
           <i class="bi bi-lightbulb"></i>
           <h2 class="py-5 px-3">Platform light(s)</h2>
           <span *ngIf="StatusReport.LightS == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-3 py-1 bg-gray-600 mx-5 font-semibold text-red-500">OFF</button>
           </span>
           <span *ngIf="StatusReport.LightS == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 mx-5 font-semibold text-lime-400">ON</button>
           </span>
         </div>
       </div>
@@ -114,30 +114,30 @@
           <i class="bi bi-alarm-fill"></i>
           <h2 class="py-5 px-3">Hydro-temp alarm</h2>
           <span *ngIf="StatusReport.TempAlarm == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold mx-5 text-red-500">OFF</button>
           </span>
           <span *ngIf="StatusReport.TempAlarm == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold mx-5 text-lime-400">ON</button>
           </span>
         </div>
         <div class="flex justify-center items-center">
           <i class="bi bi-alarm-fill"></i>
           <h2 class="py-5 px-3">Hydro-level alarm </h2>
           <span *ngIf="StatusReport.LevelAlarm == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold mx-5 text-red-500">OFF</button>
           </span>
           <span *ngIf="StatusReport.LevelAlarm == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold mx-5 text-lime-400">ON</button>
           </span>
         </div>
         <div class="flex justify-center items-center">
           <i class="bi bi-alarm-fill"></i>
           <h2 class="py-5 px-3">Diesel level alarm</h2>
           <span *ngIf="StatusReport.DieselAlarm == false">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-red-500">OFF</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold mx-5 text-red-500">OFF</button>
           </span>
           <span *ngIf="StatusReport.DieselAlarm == true">
-            <button class="px-3 py-1 bg-gray-600 mx-5 text-lime-400">ON</button>
+            <button class="px-3 py-1 bg-gray-600 font-semibold mx-5 text-lime-400">ON</button>
           </span>
         </div>
       </div>
