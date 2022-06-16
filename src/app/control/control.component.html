@@ -22,7 +22,7 @@
     </div>
 
     <!-- LOOP HERE -->
-    <div class="hidden lg:flex flex-row justify-between pt-2" *ngFor="let us of UserSettings.Tanks">
+    <div class="hidden lg:flex flex-row justify-between" *ngFor="let us of UserSettings.Tanks">
       <div class="w-5/6 lg:w-[33%] mx-auto pb-10 lg:pb-0">
         <div class="flex py-2 justify-around">
           <h3 class="pr-5">T{{us.id}}</h3>
@@ -85,14 +85,14 @@
         <!-- HEADING TEXT -->
         <div class="flex justify-around pb-2">
           <div></div>
-          <h2 class=""><i class="bi bi-thermometer-high text-yellow-500"></i>
+          <h2 class="relative right-12"><i class="bi bi-thermometer-high text-yellow-500"></i>
             Burners
           </h2>
-          <h2 class=""><i class="bi bi-arrow-left-right"></i> Mixers</h2>
+          <h2 class="relative right-24"><i class="bi bi-arrow-left-right"></i> Mixers</h2>
         </div>
 
         <!-- RUN LOOP 1 of 3 (MOBILE) -->
-        <div class="flex py-2 justify-around" *ngFor="let us of UserSettings.Tanks">
+        <div class="flex py-2 mr-28 justify-around" *ngFor="let us of UserSettings.Tanks">
           <h3 class="pr-5">T{{us.id}}</h3>
           <!-- SWITCHES -->
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
