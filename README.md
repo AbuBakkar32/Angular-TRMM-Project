@@ -1,6 +1,20 @@
-# Trmm
+# Trmm Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+
+## Run the following command to install the project and dependencies
+```
+https://github.com/AbuBakkar32/Angular-UI-Design.git
+```
+##### Copy the link and paste on your CMD or Terminal with git clone
+```
+git clone https://github.com/AbuBakkar32/Angular-UI-Design.git
+```
+Go to the project folder and run the following command to install the dependencies
+```
+npm install
+```
+It will take a couple of minutes to install the dependencies.
 
 ## Development server
 
