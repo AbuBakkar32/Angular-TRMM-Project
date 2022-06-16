@@ -24,6 +24,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "angular-material-icons": "^0.7.1",
+    "daisyui": "^2.15.4",
     "flowbite": "^1.4.7",
     "material-icons": "^1.11.1",
     "rxjs": "~6.6.0",

@@ -8,7 +8,7 @@
   <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="binoculars.ico">
+  <link rel="icon" type="image/x-icon" href="assets/images/binoculars.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -49,6 +49,9 @@
         <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
           <a href="/setting"><i class="bi bi-gear-fill text-3xl text-gray-200"></i></a>
         </div>
+        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
+          <button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS"></button>
+        </div>
       </div>
 
       <section class="fixed z-50 bottom-0 lg:hidden w-full" style="background-color: #3C3E40">
@@ -70,7 +73,7 @@
     </div>
   </header>
   <!-- Main body section-->
-  <div class="flex-grow">
+  <div class="flex-grow" style="background-color: #3C3E40">
     <app-root></app-root>
   </div>
 

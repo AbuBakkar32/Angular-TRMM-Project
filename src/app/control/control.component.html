@@ -1,8 +1,7 @@
-<section class="bg-gray-900 text-gray-200">
-  <div class="bg-gray-800 w-11/12 lg:w-[98%] xl:w-5/6 mx-auto">
+<section class="text-gray-400">
+  <div class="w-11/12 lg:w-[98%] xl:w-5/6 mx-auto" style="background-color: #31363E">
     <h1 class="text-white pl-5 py-5">Startup controls</h1>
     <hr class="border-lime-500"/>
-
 
     <!-- -----------------FOR DESKTOP/LAPTOP--------------------->
 
@@ -29,20 +28,20 @@
           <!-- SWITCHES -->
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
             <input type="checkbox" [value]="us.BurnerSet" [checked]="us.BurnerSet"
-                   class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none  bg-red-500"/>
+                   class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
             <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
             <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
             <span
-              class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+              class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
               </span>
           </label>
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
             <input type="checkbox" [value]="us.MixerSet" [checked]="us.MixerSet"
-                   class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none  bg-red-500"/>
+                   class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
             <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
             <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
             <span
-              class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+              class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
               </span>
           </label>
         </div>
@@ -54,9 +53,9 @@
         <div class="flex py-2 justify-around items-center">
           <h3>T{{us.id}}</h3>
           <input type="range" min="0" max="500" value="{{us.PaintSet}}"
-                 class="range w-44 bg-gray-700 range-accent range-xs"/>
+                 class="range w-44 bg-white range-accent range-xs"/>
           <div>
-            <span class="badge badge-lg px-5">{{us.PaintSet}}</span>
+            <span class="badge badge-lg px-5 text-white" style="background-color: #2B4050; border: none">{{us.PaintSet}}</span>
           </div>
         </div>
 
@@ -65,9 +64,9 @@
         <div class="flex py-2 justify-around items-center">
           <h3>T{{us.id}}</h3>
           <input type="range" min="0" max="500" value="{{us.OilSet}}"
-                 class="range w-44 bg-gray-700 range-accent range-xs"/>
+                 class="range w-44 bg-white range-accent range-xs"/>
           <div>
-            <span class="badge badge-lg px-5">{{us.OilSet}}</span>
+            <span class="badge badge-lg px-5 text-white" style="background-color: #2B4050; border: none">{{us.OilSet}}</span>
           </div>
         </div>
 
@@ -97,20 +96,20 @@
           <!-- SWITCHES -->
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
             <input type="checkbox" [value]="us.BurnerSet" [checked]="us.BurnerSet"
-                   class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none  bg-red-500"/>
+                   class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
             <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
             <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
             <span
-              class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+              class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
               </span>
           </label>
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
             <input type="checkbox" [value]="us.MixerSet" [checked]="us.MixerSet"
-                   class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none  bg-red-500"/>
+                   class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
             <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
             <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
             <span
-              class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+              class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
               </span>
           </label>
         </div>
@@ -130,9 +129,9 @@
         <div class="flex justify-around items-center">
           <h3>T{{us.id}}</h3>
           <input type="range" min="0" max="500" value="{{us.PaintSet}}"
-                 class="range w-64 bg-gray-700 range-accent range-xs"/>
+                 class="range w-64 bg-white range-accent range-xs"/>
           <div>
-            <span class="badge badge-lg px-5">{{us.PaintSet}}</span>
+            <span class="badge badge-lg px-5 text-white" style="background-color: #2B4050; border: none">{{us.PaintSet}}</span>
           </div>
         </div>
       </div>
@@ -149,9 +148,9 @@
         <div class="flex justify-around items-center">
           <h3>T{{us.id}}</h3>
           <input type="range" min="0" max="500" value="{{us.OilSet}}"
-                 class="range w-64 bg-gray-700 range-accent range-xs"/>
+                 class="range w-64 bg-white range-accent range-xs"/>
           <div>
-            <span class="badge badge-lg px-5">{{us.OilSet}}</span>
+            <span class="badge badge-lg px-5 text-white" style="background-color: #2B4050; border: none">{{us.OilSet}}</span>
           </div>
         </div>
       </div>
@@ -167,12 +166,12 @@
         <h3><i class="bi bi-alarm-fill text-yellow-400 px-2 lg:px-7"></i> Oil pump yellow</h3>
         <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
           <input type="checkbox" [value]="UserSettings.OilYellowSet" [checked]="UserSettings.OilYellowSet"
-                 class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none   bg-red-500"/>
+                 class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
           <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
           <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
           <span
-            class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-          </span>
+            class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
+              </span>
         </label>
       </div>
       <div class="flex justify-between w-5/6 lg:w-[33%] mx-auto py-3 lg:px-5">
@@ -180,12 +179,12 @@
         <h3><i class="bi bi-alarm-fill px-2 lg:px-7"></i> Oil pump white</h3>
         <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
           <input type="checkbox" [value]="UserSettings.OilWhiteSet" [checked]="UserSettings.OilWhiteSet"
-                 class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none   bg-red-500"/>
+                 class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
           <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
           <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
           <span
-            class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-            </span>
+            class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
+              </span>
         </label>
       </div>
       <div class="flex justify-between w-5/6 lg:w-[33%] mx-auto py-3 lg:px-5">
@@ -193,12 +192,12 @@
         <h3><i class="bi bi-lightbulb text-yellow-400 px-2 lg:px-7"></i> Platform light</h3>
         <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
           <input type="checkbox" [value]="UserSettings.LightSet" [checked]="UserSettings.LightSet"
-                 class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none   bg-red-500"/>
+                 class="appearance-none transition-colors cursor-pointer w-14 h-5 rounded-full focus:outline-none  bg-red-500"/>
           <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
           <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
           <span
-            class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-            </span>
+            class="w-6 h-6 right-7.5 absolute rounded-full transform transition-transform bg-gray-200" style="width: 28px; height: 28px;">
+              </span>
         </label>
       </div>
     </div>

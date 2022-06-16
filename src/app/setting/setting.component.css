@@ -1,0 +1,7 @@
+input:checked {
+  background-color: #FF7757;
+}
+
+input:checked~span:last-child {
+  --tw-translate-x: 1.80rem;
+}

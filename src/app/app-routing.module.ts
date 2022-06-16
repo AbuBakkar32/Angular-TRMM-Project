@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'control', component: ControlComponent },
-  { path: 'setting', component: SettingComponent }
+  { path: 'setting', component: SettingComponent },
+  { path: '**', component: LoginComponent } // If no matching route found, go back to login route
 ];
 
 @NgModule({
