@@ -3,9 +3,6 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Run the following command to install the project and dependencies
-```
-https://github.com/AbuBakkar32/Angular-TRMM-Project.git
-```
 ##### Copy the link and paste on your CMD or Terminal with git clone
 ```
 git clone https://github.com/AbuBakkar32/Angular-TRMM-Project.git
@@ -15,6 +12,13 @@ Go to the project folder and run the following command to install the dependenci
 npm install
 ```
 It will take a couple of minutes to install the dependencies.
+
+### Start the Tailwind CLI build process
+Run the CLI tool to scan your template files for classes and build your CSS.
+Run the below line in your terminal.
+```
+npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch
+```
 
 ## Development server
 
