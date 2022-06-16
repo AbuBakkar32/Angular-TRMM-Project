@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Run the following command to install the project and dependencies
 ```
-https://github.com/AbuBakkar32/Angular-UI-Design.git
+https://github.com/AbuBakkar32/Angular-TRMM-Project.git
 ```
 ##### Copy the link and paste on your CMD or Terminal with git clone
 ```
-git clone https://github.com/AbuBakkar32/Angular-UI-Design.git
+git clone https://github.com/AbuBakkar32/Angular-TRMM-Project.git
 ```
 Go to the project folder and run the following command to install the dependencies
 ```
