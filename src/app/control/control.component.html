@@ -3,18 +3,29 @@
     <h1 class="text-white pl-5 py-5">Startup controls</h1>
     <hr class="border-lime-500"/>
 
-    <div class="flex flex-col lg:flex-row justify-between pt-14" *ngFor="let us of UserSettings.Tanks">
+
+    <!-- -----------------FOR DESKTOP/LAPTOP--------------------->
+
+    <!-- HEADINGS -->
+    <div class=" lg:flex hidden justify-around pt-12 ">
+      <div></div>
+      <h2 class="relative left-7"><i class="bi bi-thermometer-high text-yellow-500 "></i>
+        Burners
+      </h2>
+      <h2 class="relative left-10"><i class="bi bi-arrow-left-right"></i> Mixers</h2>
+      <div></div>
+      <h2 class="relative left-12">Paint temp setting</h2>
+      <h2 class="relative left-10">Current value</h2>
+      <div></div>
+      <h2 class="relative left-7">Oil temp setting</h2>
+      <h2 class="relative left-4">Current value</h2>
+    </div>
+
+    <!-- LOOP HERE -->
+    <div class="hidden lg:flex flex-row justify-between pt-2" *ngFor="let us of UserSettings.Tanks">
       <div class="w-5/6 lg:w-[33%] mx-auto pb-10 lg:pb-0">
-        <div class="flex justify-around pb-2">
-          <div></div>
-          <h2 class=""><i class="bi bi-thermometer-high text-yellow-500"></i>
-            Burners
-          </h2>
-          <h2 class=""><i class="bi bi-arrow-left-right"></i> Mixers</h2>
-        </div>
         <div class="flex py-2 justify-around">
           <h3 class="pr-5">T{{us.id}}</h3>
-
           <!-- SWITCHES -->
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
             <input type="checkbox" [value]="us.BurnerSet" [checked]="us.BurnerSet"
@@ -23,7 +34,7 @@
             <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
             <span
               class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-            </span>
+              </span>
           </label>
           <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
             <input type="checkbox" [value]="us.MixerSet" [checked]="us.MixerSet"
@@ -32,54 +43,136 @@
             <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
             <span
               class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-            </span>
+              </span>
           </label>
         </div>
       </div>
+
+
       <div class="w-5/6 lg:w-[33%] mx-auto pb-7 lg:pb-0">
-        <div class="flex justify-around pb-2">
-          <div></div>
-          <h2 class="">Paint temp setting</h2>
-          <h2 class="">Current value</h2>
-        </div>
+
         <div class="flex py-2 justify-around items-center">
           <h3>T{{us.id}}</h3>
-          <input type="range" min="0" max="500" [value]="us.PaintSet"
-                 class="range w-40 bg-gray-700 range-accent range-xs"/>
+          <input type="range" min="0" max="500" value="{{us.PaintSet}}"
+                 class="range w-44 bg-gray-700 range-accent range-xs"/>
+          <div>
+            <span class="badge badge-lg px-5">{{us.PaintSet}}</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="w-5/6 lg:w-[33%] mx-auto pb-7 lg:pb-0">
+        <div class="flex py-2 justify-around items-center">
+          <h3>T{{us.id}}</h3>
+          <input type="range" min="0" max="500" value="{{us.OilSet}}"
+                 class="range w-44 bg-gray-700 range-accent range-xs"/>
+          <div>
+            <span class="badge badge-lg px-5">{{us.OilSet}}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!----------------------- FOR DESKTOP/LAPTOP END----------------------->
+
+
+    <!--------------------------- FOR TAB/MOBILE --------------------------->
+
+    <div class="flex flex-col lg:hidden justify-between pt-14">
+      <div class="w-5/6 lg:w-[33%] mx-auto pb-10 lg:pb-0">
+
+        <!-- HEADING TEXT -->
+        <div class="flex justify-around pb-2">
+          <div></div>
+          <h2 class=""><i class="bi bi-thermometer-high text-yellow-500"></i>
+            Burners
+          </h2>
+          <h2 class=""><i class="bi bi-arrow-left-right"></i> Mixers</h2>
+        </div>
+
+        <!-- RUN LOOP 1 of 3 (MOBILE) -->
+        <div class="flex py-2 justify-around" *ngFor="let us of UserSettings.Tanks">
+          <h3 class="pr-5">T{{us.id}}</h3>
+          <!-- SWITCHES -->
+          <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
+            <input type="checkbox" [value]="us.BurnerSet" [checked]="us.BurnerSet"
+                   class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none  bg-red-500"/>
+            <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
+            <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
+            <span
+              class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+              </span>
+          </label>
+          <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
+            <input type="checkbox" [value]="us.MixerSet" [checked]="us.MixerSet"
+                   class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none  bg-red-500"/>
+            <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
+            <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
+            <span
+              class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+              </span>
+          </label>
+        </div>
+      </div>
+
+
+      <!-- HEADING TEXT -->
+      <div class="flex justify-around pb-2">
+        <div></div>
+        <h2 class="ml-5">Paint temp setting</h2>
+        <h2 class="relative right-5">Current value</h2>
+      </div>
+
+      <!-- RUN LOOP 2 of 3 (MOBILE) -->
+      <div class="w-5/6 lg:w-[33%] mx-auto pb-2 -mt-1 lg:pb-0" *ngFor="let us of UserSettings.Tanks">
+
+        <div class="flex justify-around items-center">
+          <h3>T{{us.id}}</h3>
+          <input type="range" min="0" max="500" value="{{us.PaintSet}}"
+                 class="range w-64 bg-gray-700 range-accent range-xs"/>
           <div>
             <span class="badge badge-lg px-5">{{us.PaintSet}}</span>
           </div>
         </div>
       </div>
-      <div class="w-5/6 lg:w-[33%] mx-auto pb-7 lg:pb-0">
-        <div class="flex justify-around pb-2">
-          <div></div>
-          <h2 class="">Oil temp setting</h2>
-          <h2 class="">Current value</h2>
-        </div>
-        <div class="flex py-2 justify-around items-center">
+
+      <!-- HEADING TEXT -->
+      <div class="flex justify-around pb-2 mt-6">
+        <div></div>
+        <h2 class="">Oil temp setting</h2>
+        <h2 class="relative right-5">Current value</h2>
+      </div>
+
+      <!-- RUN LOOP 3 of 3 (MOBILE) -->
+      <div class="w-5/6 lg:w-[33%] mx-auto mt-1 lg:pb-0" *ngFor="let us of UserSettings.Tanks">
+        <div class="flex justify-around items-center">
           <h3>T{{us.id}}</h3>
-          <input type="range" min="0" max="500" [value]="us.OilSet"
-                 class="range w-40 bg-gray-700 range-accent range-xs"/>
+          <input type="range" min="0" max="500" value="{{us.OilSet}}"
+                 class="range w-64 bg-gray-700 range-accent range-xs"/>
           <div>
             <span class="badge badge-lg px-5">{{us.OilSet}}</span>
           </div>
         </div>
       </div>
     </div>
-    <hr class="border-gray-500 my-7"/>
 
-    <!-- BOTTOM SECTION -->
+    <!-- ---------------------FOR TAB/MOBILE END------------------------->
+
+    <!-- ----------------------BOTTOM SECTION--------------------------- -->
+
+    <hr class="border-gray-500 my-7"/>
     <div class="flex flex-col lg:flex-row pb-20">
       <div class="flex justify-between w-5/6 lg:w-[33%] mx-auto py-3 lg:px-5">
-
         <h3><i class="bi bi-alarm-fill text-yellow-400 px-2 lg:px-7"></i> Oil pump yellow</h3>
         <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
-          <input type="checkbox" [value]="UserSettings.OilYellowSet"
+          <input type="checkbox" [value]="UserSettings.OilYellowSet" [checked]="UserSettings.OilYellowSet"
                  class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none   bg-red-500"/>
           <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
           <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
-          <span class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200"></span>
+          <span
+            class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
+          </span>
         </label>
       </div>
       <div class="flex justify-between w-5/6 lg:w-[33%] mx-auto py-3 lg:px-5">
@@ -92,23 +185,22 @@
           <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
           <span
             class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-          </span>
+            </span>
         </label>
       </div>
       <div class="flex justify-between w-5/6 lg:w-[33%] mx-auto py-3 lg:px-5">
 
         <h3><i class="bi bi-lightbulb text-yellow-400 px-2 lg:px-7"></i> Platform light</h3>
         <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
-          <input type="checkbox" [value]="UserSettings.LightSet"
+          <input type="checkbox" [value]="UserSettings.LightSet" [checked]="UserSettings.LightSet"
                  class="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full focus:outline-none   bg-red-500"/>
           <span class="absolute font-medium text-xs uppercase right-1 text-white"> OFF </span>
           <span class="absolute font-medium text-xs uppercase right-8 text-white"> ON </span>
           <span
             class="w-7 h-7 right-7 absolute rounded-full transform transition-transform bg-gray-200">
-          </span>
+            </span>
         </label>
       </div>
     </div>
   </div>
-
 </section>
