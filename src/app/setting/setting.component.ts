@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppComponent} from "../app.component";
+import { GlobalConstants } from "../common/global-constants";
 
 @Component({
   selector: 'app-setting',
@@ -7,10 +8,12 @@ import { AppComponent} from "../app.component";
   styleUrls: ['./setting.component.css']
 })
 export class SettingComponent implements OnInit {
-  isDark = AppComponent
-  constructor() { }
+  isDark = localStorage.getItem('color-theme');
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+    console.log(this.isDark);
   }
 
   darkMode(event: any){
@@ -18,11 +21,13 @@ export class SettingComponent implements OnInit {
       localStorage.setItem('color-theme','dark');
       // @ts-ignore
       document.getElementById('mode').classList.add('dark')
+      this.isDark = localStorage.getItem('color-theme');
     }
     else{
-      localStorage.setItem('color-theme','light');
+      localStorage.setItem('color-theme','');
       // @ts-ignore
       document.getElementById('mode').classList.remove('dark')
+      localStorage.getItem('color-theme');
     }
   }
 }

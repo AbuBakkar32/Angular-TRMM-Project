@@ -4,7 +4,7 @@
   <h3 class="pl-7 font-bold text-lg">Dark mode</h3>
 
   <label class="flex items-center relative w-max cursor-pointer select-none mx-5">
-    <input type="checkbox" [checked]="true" (click)="darkMode($event)"
+    <input type="checkbox" [checked]="isDark" (click)="darkMode($event)"
       class="appearance-none transition-colors cursor-pointer w-16 h-8 rounded-full focus:outline-none bg-black" />
     <span class="absolute rounded-full transform transition-transform bg-white"
       style="right: 31.8px; width: 30px; height: 30px">
