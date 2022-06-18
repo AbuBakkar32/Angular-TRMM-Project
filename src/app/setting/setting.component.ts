@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AppComponent} from "../app.component";
-import { GlobalConstants } from "../common/global-constants";
 
 @Component({
   selector: 'app-setting',
