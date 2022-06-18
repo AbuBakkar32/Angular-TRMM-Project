@@ -52,7 +52,7 @@
 
         <div class="flex py-2 justify-around items-center">
           <h3>T{{us.id}}</h3>
-          <input type="range" min="0" max="500" value="{{us.PaintSet}}"
+          <input type="range" min="0" max="500" (change)="changeRangeValuePaint($event, us.id)" value="{{us.PaintSet}}"
             class="range w-44 bg-white range-accent range-xs" />
           <div>
             <span
@@ -64,7 +64,7 @@
       <div class="w-5/6 lg:w-[33%] mx-auto pb-7 lg:pb-0">
         <div class="flex py-2 justify-around items-center">
           <h3>T{{us.id}}</h3>
-          <input type="range" min="0" max="500" value="{{us.OilSet}}"
+          <input type="range" min="0" max="500" (change)="changeRangeValueOil($event, us.id)" value="{{us.OilSet}}"
             class="range w-44 bg-white range-accent range-xs" />
           <div>
             <span
@@ -130,8 +130,8 @@
 
         <div class="flex justify-around items-center">
           <h3>T{{us.id}}</h3>
-          <input type="range" min="0" max="500" value="{{us.PaintSet}}"
-            class="range w-64 bg-white range-accent range-xs" />
+          <input type="range" min="0" max="500" (change)="changeRangeValuePaint($event, us.id)" value="{{us.PaintSet}}"
+                 class="range w-64 bg-white range-accent range-xs"/>
           <div>
             <span class="badge badge-lg px-5 text-white"
               style="background-color: #2B4050; border: none">{{us.PaintSet}}</span>
@@ -150,8 +150,8 @@
       <div class="w-5/6 lg:w-[33%] mx-auto mt-1 lg:pb-0" *ngFor="let us of UserSettings.Tanks">
         <div class="flex justify-around items-center">
           <h3>T{{us.id}}</h3>
-          <input type="range" min="0" max="500" value="{{us.OilSet}}"
-            class="range w-64 bg-white range-accent range-xs" />
+          <input type="range" min="0" max="500" (change)="changeRangeValueOil($event, us.id)" value="{{us.OilSet}}"
+                 class="range w-64 bg-white range-accent range-xs"/>
           <div>
             <span class="badge badge-lg px-5 text-white"
               style="background-color: #2B4050; border: none">{{us.OilSet}}</span>

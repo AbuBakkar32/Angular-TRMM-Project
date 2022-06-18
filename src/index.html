@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +16,9 @@
 </head>
 <body>
 
-<div class="flex flex-col h-screen" style="background-color: #3C3E40">
+<div class="flex flex-col h-screen">
   <!--    this header section-->
-  <header class="" style="background-color: #3C3E40">
+  <header class="text-gray-800 dark:text-white bg-white dark:bg-[#3C3E40]">
     <div class="w-11/12 lg:w-[98%] xl:w-5/6 mx-auto py-1 flex items-center justify-between">
       <a href="#" class="flex">
         <!--    start-  add your svg picture here-->
@@ -33,51 +33,48 @@
                 fill="#1C64F2"></path>
         </svg>
         <!--    End -  add your svg picture here-->
-        <span class="self-center text-lg font-semibold whitespace-nowrap text-white">COMPANY</span>
+        <span class="self-center text-lg font-semibold whitespace-nowrap">COMPANY</span>
       </a>
       <div class="hidden lg:flex">
-        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-          <a href="/dashboard"><i class="bi bi-house-door-fill  text-3xl text-gray-200"></i></a>
+        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+          <a href="/dashboard"><i class="bi bi-house-door-fill  text-3xl"></i></a>
         </div>
-        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-          <a href="/control"><i class="bi bi-sliders text-3xl text-gray-200"></i></a>
+        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+          <a href="/control"><i class="bi bi-sliders text-3xl"></i></a>
         </div>
-        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-          <a href="/login"><i class="bi bi-person-circle text-3xl text-gray-200"></i></a>
+        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+          <a href="/login"><i class="bi bi-person-circle text-3xl"></i></a>
         </div>
-        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-          <a href="/setting"><i class="bi bi-gear-fill text-3xl text-gray-200"></i></a>
-        </div>
-        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-          <button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS"></button>
+        <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+          <a href="/setting"><i class="bi bi-gear-fill text-3xl"></i></a>
         </div>
       </div>
 
-      <section class="fixed z-50 bottom-0 lg:hidden w-full" style="background-color: #3C3E40">
+      <section class="fixed z-50 bottom-0 lg:hidden w-full bg-gray-100">
         <div class="flex justify-around">
-          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-            <a href="/dashboard"><i class="bi bi-house-door-fill  text-3xl text-gray-200"></i></a>
+          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+            <a href="/dashboard"><i class="bi bi-house-door-fill  text-3xl"></i></a>
           </div>
-          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-            <a href="/control"><i class="bi bi-sliders text-3xl text-gray-200"></i></a>
+          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+            <a href="/control"><i class="bi bi-sliders text-3xl"></i></a>
           </div>
-          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-            <a href="/login"><i class="bi bi-person-circle text-3xl text-gray-200"></i></a>
+          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+            <a href="/login"><i class="bi bi-person-circle text-3xl"></i></a>
           </div>
-          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:bg-gray-800">
-            <a href="/setting"><i class="bi bi-gear-fill text-3xl text-gray-200"></i></a>
+          <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+            <a href="/setting"><i class="bi bi-gear-fill text-3xl"></i></a>
           </div>
         </div>
       </section>
     </div>
   </header>
   <!-- Main body section-->
-  <div class="flex-grow" style="background-color: #3C3E40">
+  <div class="flex-grow bg-white dark:bg-[#3C3E40]">
     <app-root></app-root>
   </div>
 
   <!--  Footer section-->
-  <footer class="text-center text-white lg:text-left hidden lg:block" style="background-color: #3C3E40">
+  <footer class="text-center text-black lg:text-left hidden lg:block bg-white dark:text-white dark:bg-[#3C3E40]">
     <div class="text-center p-4 text-sm">
       © 2022 Copyright
       <a class="" href="/dashboard">Trysil Road Marketing Machines</a>
