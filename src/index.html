@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" id="mode" class="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,72 +23,96 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
+
 <body>
 
-<div class="flex flex-col h-screen">
-  <!--    this header section-->
-  <header class="text-gray-800 dark:text-white bg-white dark:bg-[#3C3E40]">
-    <div class="w-11/12 lg:w-[98%] xl:w-5/6 mx-auto py-1 flex items-center justify-between">
-      <a href="#" class="flex">
-        <!--    start-  add your svg picture here-->
-        <svg class="h-10 mr-3" viewBox="0 0 52 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M1.87695 53H28.7791C41.5357 53 51.877 42.7025 51.877 30H24.9748C12.2182 30 1.87695 40.2975 1.87695 53Z"
-            fill="#76A9FA"></path>
-          <path
-            d="M0.000409561 32.1646L0.000409561 66.4111C12.8618 66.4111 23.2881 55.9849 23.2881 43.1235L23.2881 8.87689C10.9966 8.98066 1.39567 19.5573 0.000409561 32.1646Z"
-            fill="#A4CAFE"></path>
-          <path d="M50.877 5H23.9748C11.2182 5 0.876953 15.2975 0.876953 28H27.7791C40.5357 28 50.877 17.7025 50.877 5Z"
-                fill="#1C64F2"></path>
-        </svg>
-        <!--    End -  add your svg picture here-->
-        <span class="self-center text-lg font-semibold whitespace-nowrap">COMPANY</span>
-      </a>
-      <div class="hidden lg:flex">
-        <a href="/dashboard"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-         <i class="bi bi-house-door-fill  text-3xl"></i>
-        </div></a>
-        <a href="/control"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-          <i class="bi bi-sliders text-3xl"></i>
-        </div></a>
-        <a href="/login"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-          <i class="bi bi-person-circle text-3xl"></i>
-        </div></a>
-        <a href="/setting"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-          <i class="bi bi-gear-fill text-3xl"></i>
-        </div></a>
-      </div>
-
-      <section class="fixed z-50 bottom-0 lg:hidden w-full bg-gray-100">
-        <div class="flex justify-around">
-          <a href="/dashboard"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-            <i class="bi bi-house-door-fill  text-3xl"></i>
-          </div></a>
-          <a href="/control"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-            <i class="bi bi-sliders text-3xl"></i>
-          </div></a>
-          <a href="/login"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-            <i class="bi bi-person-circle text-3xl"></i>
-          </div></a>
-          <a href="/setting"><div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
-            <i class="bi bi-gear-fill text-3xl"></i>
-          </div></a>
+  <div class="flex flex-col h-screen">
+    <!--    this header section-->
+    <header class="text-gray-800 dark:text-white bg-white dark:bg-[#3C3E40]">
+      <div class="w-11/12 lg:w-[98%] xl:w-5/6 mx-auto py-1 flex items-center justify-between">
+        <a href="#" class="flex">
+          <!--    start-  add your svg picture here-->
+          <svg class="h-10 mr-3" viewBox="0 0 52 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.87695 53H28.7791C41.5357 53 51.877 42.7025 51.877 30H24.9748C12.2182 30 1.87695 40.2975 1.87695 53Z"
+              fill="#76A9FA"></path>
+            <path
+              d="M0.000409561 32.1646L0.000409561 66.4111C12.8618 66.4111 23.2881 55.9849 23.2881 43.1235L23.2881 8.87689C10.9966 8.98066 1.39567 19.5573 0.000409561 32.1646Z"
+              fill="#A4CAFE"></path>
+            <path
+              d="M50.877 5H23.9748C11.2182 5 0.876953 15.2975 0.876953 28H27.7791C40.5357 28 50.877 17.7025 50.877 5Z"
+              fill="#1C64F2"></path>
+          </svg>
+          <!--    End -  add your svg picture here-->
+          <span class="self-center text-lg font-semibold whitespace-nowrap">COMPANY</span>
+        </a>
+        <div class="hidden lg:flex">
+          <a href="/dashboard">
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+              <i class="bi bi-house-door-fill  text-3xl"></i>
+            </div>
+          </a>
+          <a href="/control">
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+              <i class="bi bi-sliders text-3xl"></i>
+            </div>
+          </a>
+          <a href="/login">
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+              <i class="bi bi-person-circle text-3xl"></i>
+            </div>
+          </a>
+          <a href="/setting">
+            <div class="px-5 py-4 rounded mx-2 cursor-pointer hover:text-white hover:bg-gray-800">
+              <i class="bi bi-gear-fill text-3xl"></i>
+            </div>
+          </a>
         </div>
-      </section>
-    </div>
-  </header>
-  <!-- Main body section-->
-  <div class="flex-grow bg-white dark:bg-[#3C3E40]">
-    <app-root></app-root>
-  </div>
 
-  <!--  Footer section-->
-  <footer class="text-center text-black lg:text-left hidden lg:block bg-white dark:text-white dark:bg-[#3C3E40]">
-    <div class="text-center p-4 text-sm">
-      © 2022 Copyright
-      <a class="" href="/dashboard">Trysil Road Marketing Machines</a>
+
+
+      </div>
+    </header>
+    <!-- Main body section-->
+    <div class="flex-grow bg-white dark:bg-[#3C3E40]">
+      <app-root></app-root>
     </div>
-  </footer>
-</div>
+
+    <!--  Footer section-->
+
+
+    <!-- MOBILE NAVIGATION -->
+    <section class="fixed z-50 bottom-0 lg:hidden w-full text-gray-700 dark:text-white bg-gray-100 dark:bg-gray-800">
+      <div class="flex justify-around">
+        <a href="/dashboard">
+          <div class="px-5 py-4 rounded cursor-pointer hover:text-white hover:bg-gray-800">
+            <i class="bi bi-house-door-fill text-3xl"></i>
+          </div>
+        </a>
+        <a href="/control">
+          <div class="px-5 py-4 rounded cursor-pointer hover:text-white hover:bg-gray-800">
+            <i class="bi bi-sliders text-3xl"></i>
+          </div>
+        </a>
+        <a href="/login">
+          <div class="px-5 py-4 rounded cursor-pointer hover:text-white hover:bg-gray-800">
+            <i class="bi bi-person-circle text-3xl"></i>
+          </div>
+        </a>
+        <a href="/setting">
+          <div class="px-5 py-4 rounded cursor-pointer hover:text-white hover:bg-gray-800">
+            <i class="bi bi-gear-fill text-3xl"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="text-center text-black lg:text-left hidden lg:block bg-white dark:text-white dark:bg-[#3C3E40]">
+      <div class="text-center p-4 text-sm">
+        © 2022 Copyright
+        <a class="" href="/dashboard">Trysil Road Marketing Machines</a>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>

@@ -7,22 +7,24 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
       <div class="flex flex-col md:flex-row" *ngFor="let tank of StatusReport.Tanks">
         <!-- CIRCULAR PROGRESS GROUP -->
-        <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
+        <div class="px-5 flex md:w-1/2 mx-auto">
           <div class="px-2">
             <h2 class="py-5">T{{tank.id}} paint temp</h2>
             <div class="radial-progress font-extrabold border-4 border-gray-200 dark:border-gray-400"
-                 style="--value:100*{{tank.PaintTemp}}/250; --size:6rem; color: RGB(100, {{tank.PaintTemp}}, 0)"><span class="text-black dark:text-white">{{tank.PaintTemp}}°c</span>
+              style="--value:100*{{tank.PaintTemp}}/250; --size:6rem; color: RGB(100, {{tank.PaintTemp}}, 0)"><span
+                class="text-black dark:text-white">{{tank.PaintTemp}}°c</span>
             </div>
           </div>
           <div class="px-2">
             <h2 class="py-5">T{{tank.id}} oil temp</h2>
             <div class="radial-progress font-extrabold border-4  border-gray-200 dark:border-gray-400"
-                 style="--value:100*{{tank.OilTemp}}/250; --size:6rem; --min:0; --max:255; color: RGB(100, {{tank.OilTemp}}, 0)"><span class="text-black dark:text-white">{{tank.OilTemp}}°c</span>
+              style="--value:100*{{tank.OilTemp}}/250; --size:6rem; --min:0; --max:255; color: RGB(100, {{tank.OilTemp}}, 0)">
+              <span class="text-black dark:text-white">{{tank.OilTemp}}°c</span>
             </div>
           </div>
         </div>
         <!-- ICON GROUP -->
-        <div class="md:w-1/2  mx-auto py-7 md:py-0">
+        <div class="md:w-1/2  mx-auto py-2 md:py-0">
           <div class="flex justify-center items-center">
             <i class="bi bi-thermometer-high text-yellow-500"></i>
             <h2 class="py-5 px-3">T{{tank.id}} Burner</h2>
