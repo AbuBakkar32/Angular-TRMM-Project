@@ -27,7 +27,7 @@ export class DashboardComponent implements OnInit {
     "LeftTemp": 200,
     "RightTemp": 250,
     Tanks: [
-      {"id": 1, "Burner": true, "Mixer": false, "Alarm": true, "PaintTemp": 15, "OilTemp": 90},
+      {"id": 1, "Burner": true, "Mixer": false, "Alarm": true, "PaintTemp": 150, "OilTemp": 90},
       {"id": 2, "Burner": false, "Mixer": true, "Alarm": false, "PaintTemp": 87, "OilTemp": 36},
       {"id": 3, "Burner": true, "Mixer": true, "Alarm": true, "PaintTemp": 54, "OilTemp": 80},
       {"id": 4, "Burner": false, "Mixer": false, "Alarm": false, "PaintTemp": 77, "OilTemp": 63},
