@@ -10,14 +10,14 @@
         <div class="px-5 flex md:w-1/2 mx-auto py-7 md:py-0">
           <div class="px-2">
             <h2 class="py-5">T{{tank.id}} paint temp</h2>
-            <div class="radial-progress font-extrabold text-lime-500 border-4  border-gray-200 dark:border-gray-700"
-              style="--value:80; --size:6rem; color: #297000">{{tank.PaintTemp}}°c
+            <div class="radial-progress font-extrabold border-4 border-gray-200 dark:border-gray-400"
+              style="--value:{{tank.PaintTemp}}; --size:6rem; color: RGB(100, {{tank.PaintTemp}}, 0)">{{tank.PaintTemp}}°c
             </div>
           </div>
           <div class="px-2">
             <h2 class="py-5">T{{tank.id}} oil temp</h2>
-            <div class="radial-progress font-extrabold text-lime-500 border-4  border-gray-200 dark:border-gray-700"
-              style="--value:40; --size:6rem; color: #843102">{{tank.OilTemp}}°c
+            <div class="radial-progress font-extrabold border-4  border-gray-200 dark:border-gray-400"
+                 style="--value:{{tank.OilTemp}}; --size:6rem; --min:0; --max:255; color: RGB(100, {{tank.OilTemp}}, 0)">{{tank.OilTemp}}°c
             </div>
           </div>
         </div>
