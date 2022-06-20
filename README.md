@@ -1,6 +1,6 @@
 # Trmm Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2
 
 ## Run the following command to install the project and dependencies
 ##### Copy the link and paste on your CMD or Terminal with git clone
